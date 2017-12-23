@@ -18,10 +18,10 @@ namespace XmasConsoleAPP
 
         private void Start()
         {
-            t = new Timer();
-            t.Elapsed += XmasTree;
-            t.Interval = 1000;
-            t.Enabled = true;
+            t = new Timer(); // Instantiating the class Timer
+            t.Elapsed += XmasTree; // using the elapse event handler that uses time in an incremental method based on the XmasTree method
+            t.Interval = 1000; // Time interval 1000m/sec
+            t.Enabled = true; 
             t.Start();
 
         }
@@ -30,7 +30,7 @@ namespace XmasConsoleAPP
         {
 
 
-            if (DateTime.Now.Minute == 50)
+            if (DateTime.Now.Minute == 39)
             {
                 t.Stop();
                 int x = 20, y, z;
